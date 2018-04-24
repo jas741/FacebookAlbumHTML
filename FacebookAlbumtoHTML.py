@@ -4,13 +4,13 @@ import facebook
 
 
 
-#input your access code, in quotes. (get this from https://developers.facebook.com/tools/explorer/). Codes expire after a few hours i think.
+#input your access code, in quotes. (get this from https://developers.facebook.com/tools/explorer/). Codes expire after two hours. You can use an app code instead of a user code if you need a longer duration.
 token = "your code"
 
 # set this to what you want the title of the html page to be, in quotes
 pagetitle = "My Album"
 
-# This is the text at the top of the page, eg "From a Columbia-Barnard-Rutgers workshop in the philosophy of mind at the Brooklyn Zen Center in Gowanus, August 2017". In quotes.
+# This is the text at the top of the page, eg "Photos from My Summer Abroad". In quotes.
 pagedescription = "Photos from My Summer Abroad"
 
 # This is the name of the album, eg, "Summer2016", if the pic folder is "Summer2016@@".
@@ -116,7 +116,7 @@ Go to:
 </BODY>
 </HTML>
 """
-
+#The above assumes you want to situate this page within a larger website with a main photo galleries page and a home page
 
 Html_file = open(albumname + ".html","w")
 Html_file.write(htmlstring)
