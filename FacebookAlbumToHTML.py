@@ -38,17 +38,18 @@ htmlstring = """
    <TITLE>""" + pagetitle + """</TITLE>
 </HEAD>
 <BODY TEXT="#000000" BGCOLOR="#FFFFF" LINK="#0000EE" VLINK="#551A8B" ALINK="#FF0000">
-
+<br>
 
 <h3>""" + pagedescription +  """</h3>
 
+<br>
 <b>
 
 """
 
 
 
-photodict = graph.get_object(id=albumnumber, fields="photos")
+photodict = graph.get_object(id=albumnumber, fields="photos.limit(200)")
 
 photolist = [x['id'] for x in photodict['photos']['data']]
 
@@ -70,6 +71,7 @@ for photo in photolist:
             <img src=\"""" + albumname + """@@/""" + str(photolist.index(photo)+1).zfill(4) + """.jpg">
             <p>""" + caption + """</p>
             <!-- """ + tagstring + """ -->
+            <br>
             """
 
         else:
@@ -78,6 +80,7 @@ for photo in photolist:
             <img src=\"""" + albumname + """@@/""" + str(photolist.index(photo)+1).zfill(4) + """.jpg">
             <p>""" + caption + """</p>
             <!-- -->
+            <br>
             """
 
     else:
@@ -91,6 +94,7 @@ for photo in photolist:
             <img src=\"""" + albumname + """@@/""" + str(photolist.index(photo)+1).zfill(4) + """.jpg">
             <p>""" + tagstring + """</p>
             <!--  -->
+            <br>
             """
 
         else:
@@ -99,6 +103,7 @@ for photo in photolist:
             <img src=\"""" + albumname + """@@/""" + str(photolist.index(photo)+1).zfill(4) + """.jpg">
             <p></p>
             <!-- -->
+            <br>
             """
         
 htmlstring += """
