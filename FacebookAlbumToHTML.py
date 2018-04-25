@@ -67,7 +67,7 @@ for photo in photolist:
             tagstring = ", ".join(tagslist)
     
             htmlstring += """
-            <img src=\"""" + albumname + """@@/""" + str(photolist.index(photo)+1) + """.jpg">
+            <img src=\"""" + albumname + """@@/""" + str(photolist.index(photo)+1).zfill(4) + """.jpg">
             <p>""" + caption + """</p>
             <!-- """ + tagstring + """ -->
             """
@@ -75,7 +75,7 @@ for photo in photolist:
         else:
 
             htmlstring += """
-            <img src=\"""" + albumname + """@@/""" + str(photolist.index(photo)+1) + """.jpg">
+            <img src=\"""" + albumname + """@@/""" + str(photolist.index(photo)+1).zfill(4) + """.jpg">
             <p>""" + caption + """</p>
             <!-- -->
             """
@@ -88,7 +88,7 @@ for photo in photolist:
             tagstring = ", ".join(tagslist)
     
             htmlstring += """
-            <img src=\"""" + albumname + """@@/""" + str(photolist.index(photo)+1) + """.jpg">
+            <img src=\"""" + albumname + """@@/""" + str(photolist.index(photo)+1).zfill(4) + """.jpg">
             <p>""" + tagstring + """</p>
             <!--  -->
             """
@@ -96,7 +96,7 @@ for photo in photolist:
         else:
 
             htmlstring += """
-            <img src=\"""" + albumname + """@@/""" + str(photolist.index(photo)+1) + """.jpg">
+            <img src=\"""" + albumname + """@@/""" + str(photolist.index(photo)+1).zfill(4) + """.jpg">
             <p></p>
             <!-- -->
             """
