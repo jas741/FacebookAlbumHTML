@@ -4,7 +4,7 @@ import facebook
 
 
 
-#input your access code, in quotes. (get this from https://developers.facebook.com/tools/explorer/). Codes expire after two hours. You can use an app code instead of a user code if you need a longer duration.
+#input your access code, in quotes. (get this from https://developers.facebook.com/tools/explorer/). Codes expire after two hours.
 token = "your code"
 
 # set this to what you want the title of the html page to be, in quotes
@@ -35,6 +35,13 @@ htmlstring = """
 <HTML>
 <HEAD>
 <meta charset="utf-8">
+<style>
+img { 
+    max-width: 1024px;
+    max-height: 1024px;
+    }
+</style>
+
    <TITLE>""" + pagetitle + """</TITLE>
 </HEAD>
 <BODY TEXT="#000000" BGCOLOR="#FFFFF" LINK="#0000EE" VLINK="#551A8B" ALINK="#FF0000">
