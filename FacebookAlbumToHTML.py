@@ -31,7 +31,7 @@ graph = facebook.GraphAPI(access_token=token, version=2.7)
 
 htmlstring = """
 
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!DOCTYPE HTML>
 <HTML>
 <HEAD>
 <meta charset="utf-8">
