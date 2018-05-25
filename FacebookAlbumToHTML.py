@@ -2,9 +2,11 @@
 
 import facebook
 
+#You have to enter in values for the following variables:  token, pagetitle, pagedescription, albumname, and albumnumber.  Dont change anything else.
 
+#input your access code, in quotes. (get this from https://developers.facebook.com/tools/explorer/). This class of code expires after two hours. 
+#Be sure to check 'user-photos' under 'select permissions' before clicking 'get access token'. 
 
-#input your access code, in quotes. (get this from https://developers.facebook.com/tools/explorer/). Codes expire after two hours.
 token = "your code"
 
 # set this to what you want the title of the html page to be, in quotes
